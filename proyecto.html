@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            background: rgb(238,174,202);
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            background: #fdedec;
+        }
+        .container:hover .color{
+            transform: scale(0.9);
+            transform: translateX(200px);
+        }
+        .color{
+            height: 100px;
+        }
+
+        .IndianRed{
+            list-style: none;
+            background-color: IndianRed;
+            transition: transform 500ms linear;
+            transition-delay: 0.2s;
+        }
+        .LightCoral{
+            list-style: none;
+            background-color: LightCoral;
+            transition: transform 900ms ease;
+            transition-delay: 0.3s;
+        }
+        .Salmon{
+            list-style: none;
+            background-color: salmon;
+            transition: transform 2s ease-in;
+            transition-delay: 0.5s;
+        }
+        .DarkSalmon{
+            list-style: none;
+            background-color: DarkSalmon;
+            transition: transform 2.5s ease-in-out;
+            transition-delay: 1s;
+        }
+        .LightSalmon{
+            list-style: none;
+            background-color: LightSalmon;
+            transition: transform 3s ease-out;
+            transition-delay: 1.5s;
+            
+        }
+
+        .content{
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            position: relative;
+        }
+
+        .circle{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            transition: transform 1.5s linear;
+        }
+        .pink{
+            background: pink;
+        }
+        .yellow{
+            background: yellow;
+        }
+        .blue{
+            background: aqua;
+        }
+        .pink:hover{
+            transition: transform 1s cubic-bezier(.69,.18,.56,.69);
+            transform: translate(200px, 600px);
+        }
+        .yellow:hover{
+            transition: transform 0.5s linear;
+            transform: translate(-10px, 300px);
+        }
+        .blue:hover{
+            transition: transform 15s ease-out;
+            transform: translate(30px, 300px);
+        }
+        .two{
+            position: absolute;
+            left: 50%;
+            top: 1%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+         <div class="color IndianRed">IndianRed</div>
+         <div class="color LightCoral">LightCoral</div>
+         <div class="color Salmon">Salmon</div>
+         <div class="color DarkSalmon">DarkSalmon</div>
+         <div class="color LightSalmon">LightSalmon</div>
+    </div>
+    <div class="content">
+          <div class="circle pink"></div>
+          <div class="circle yellow"></div>
+          <div class="circle blue"></div>
+          <div class="circle pink two"></div>
+          <div class="circle yellow two"></div>
+          <div class="circle blue two"></div>
+
+    </div>
+</body>
+</html>
